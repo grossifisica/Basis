@@ -1,0 +1,6 @@
+{
+  "name": "Plataforma Basis",
+  "description": "Matemática básica com foco em exatas - Prof. Grossi",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

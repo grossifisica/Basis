@@ -1,0 +1,259 @@
+{
+  "config": {
+    "sheetUrl": "https://github.com/grossifisica/Mb/blob/main/cont.txt",
+    "spreadsheetId": "github-grossifisica-mb",
+    "lastSyncedAt": "2026-09-21T17:01:31.871Z",
+    "status": "connected",
+    "statusMessage": "Sincronizado com sucesso! 3 aula(s) carregada(s) do GitHub.",
+    "totalAulas": 3,
+    "totalItems": 3
+  },
+  "aulas": [
+    {
+      "id": "aula-1",
+      "name": "Notação científica",
+      "gid": "1",
+      "items": [
+        {
+          "id": "aula-item-1",
+          "aulaName": "Notação científica",
+          "aulaIndex": 0,
+          "rowNumber": 1,
+          "title": "Notação científica",
+          "subject": "Matemática Básica",
+          "pdfLinks": [
+            "https://docs.google.com/presentation/d/1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8/edit?usp=sharing"
+          ],
+          "youtubeLinks": [
+            "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing"
+          ],
+          "videoLinks": [
+            "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing"
+          ],
+          "videos": [
+            {
+              "url": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing",
+              "id": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+              "title": "Notação científica - Vídeo 1",
+              "type": "drive",
+              "driveFileId": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+              "embedUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/preview",
+              "thumbnailUrl": "https://drive.google.com/thumbnail?id=1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK&sz=w800"
+            }
+          ],
+          "primaryPdfUrl": "https://docs.google.com/presentation/d/1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8/edit?usp=sharing",
+          "primaryYoutubeUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing",
+          "primaryDriveVideoId": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+          "primaryVideoType": "drive",
+          "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/preview",
+          "driveFileId": "1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8"
+        }
+      ],
+      "totalPdfs": 1,
+      "totalVideos": 1,
+      "subjects": [
+        "Matemática Básica"
+      ]
+    },
+    {
+      "id": "aula-2",
+      "name": "Potências de base 10",
+      "gid": "2",
+      "items": [
+        {
+          "id": "aula-item-2",
+          "aulaName": "Potências de base 10",
+          "aulaIndex": 1,
+          "rowNumber": 2,
+          "title": "Potências de base 10",
+          "subject": "Matemática Básica",
+          "pdfLinks": [
+            "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing"
+          ],
+          "youtubeLinks": [
+            "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
+          ],
+          "videoLinks": [
+            "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
+          ],
+          "videos": [
+            {
+              "url": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+              "id": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+              "title": "Potências de base 10 - Vídeo 1",
+              "type": "drive",
+              "driveFileId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+              "embedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+              "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r&sz=w800"
+            }
+          ],
+          "primaryPdfUrl": "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing",
+          "primaryYoutubeUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+          "primaryDriveVideoId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "primaryVideoType": "drive",
+          "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+          "driveFileId": "1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc"
+        }
+      ],
+      "totalPdfs": 1,
+      "totalVideos": 1,
+      "subjects": [
+        "Matemática Básica"
+      ]
+    },
+    {
+      "id": "aula-3",
+      "name": "Prefixos",
+      "gid": "3",
+      "items": [
+        {
+          "id": "aula-item-3",
+          "aulaName": "Prefixos",
+          "aulaIndex": 2,
+          "rowNumber": 3,
+          "title": "Prefixos",
+          "subject": "Matemática Básica",
+          "pdfLinks": [
+            "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing"
+          ],
+          "youtubeLinks": [
+            "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
+          ],
+          "videoLinks": [
+            "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
+          ],
+          "videos": [
+            {
+              "url": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+              "id": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+              "title": "Prefixos - Vídeo 1",
+              "type": "drive",
+              "driveFileId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+              "embedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+              "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z&sz=w800"
+            }
+          ],
+          "primaryPdfUrl": "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing",
+          "primaryYoutubeUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+          "primaryDriveVideoId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "primaryVideoType": "drive",
+          "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+          "driveFileId": "1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk"
+        }
+      ],
+      "totalPdfs": 1,
+      "totalVideos": 1,
+      "subjects": [
+        "Matemática Básica"
+      ]
+    }
+  ],
+  "allItems": [
+    {
+      "id": "aula-item-1",
+      "aulaName": "Notação científica",
+      "aulaIndex": 0,
+      "rowNumber": 1,
+      "title": "Notação científica",
+      "subject": "Matemática Básica",
+      "pdfLinks": [
+        "https://docs.google.com/presentation/d/1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8/edit?usp=sharing"
+      ],
+      "youtubeLinks": [
+        "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing"
+      ],
+      "videoLinks": [
+        "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing"
+      ],
+      "videos": [
+        {
+          "url": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing",
+          "id": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+          "title": "Notação científica - Vídeo 1",
+          "type": "drive",
+          "driveFileId": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+          "embedUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/preview",
+          "thumbnailUrl": "https://drive.google.com/thumbnail?id=1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK&sz=w800"
+        }
+      ],
+      "primaryPdfUrl": "https://docs.google.com/presentation/d/1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8/edit?usp=sharing",
+      "primaryYoutubeUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/view?usp=sharing",
+      "primaryDriveVideoId": "1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK",
+      "primaryVideoType": "drive",
+      "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1eHfavuK0C6kRzl6IBvkUDxn0npVZKBtK/preview",
+      "driveFileId": "1U3um1skYp1MurFec_oLjOOYwkVRmNNnRodid5Scs-K8"
+    },
+    {
+      "id": "aula-item-2",
+      "aulaName": "Potências de base 10",
+      "aulaIndex": 1,
+      "rowNumber": 2,
+      "title": "Potências de base 10",
+      "subject": "Matemática Básica",
+      "pdfLinks": [
+        "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing"
+      ],
+      "youtubeLinks": [
+        "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
+      ],
+      "videoLinks": [
+        "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
+      ],
+      "videos": [
+        {
+          "url": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+          "id": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "title": "Potências de base 10 - Vídeo 1",
+          "type": "drive",
+          "driveFileId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "embedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+          "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r&sz=w800"
+        }
+      ],
+      "primaryPdfUrl": "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing",
+      "primaryYoutubeUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+      "primaryDriveVideoId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+      "primaryVideoType": "drive",
+      "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+      "driveFileId": "1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc"
+    },
+    {
+      "id": "aula-item-3",
+      "aulaName": "Prefixos",
+      "aulaIndex": 2,
+      "rowNumber": 3,
+      "title": "Prefixos",
+      "subject": "Matemática Básica",
+      "pdfLinks": [
+        "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing"
+      ],
+      "youtubeLinks": [
+        "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
+      ],
+      "videoLinks": [
+        "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
+      ],
+      "videos": [
+        {
+          "url": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+          "id": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "title": "Prefixos - Vídeo 1",
+          "type": "drive",
+          "driveFileId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "embedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+          "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z&sz=w800"
+        }
+      ],
+      "primaryPdfUrl": "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing",
+      "primaryYoutubeUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+      "primaryDriveVideoId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+      "primaryVideoType": "drive",
+      "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+      "driveFileId": "1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk"
+    }
+  ],
+  "subjects": [
+    "Matemática Básica"
+  ],
+  "lastSyncedAt": "2026-09-21T17:01:31.871Z"
+}

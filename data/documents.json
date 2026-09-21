@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc-manual-plataforma",
+    "title": "Guia Rápido da Biblioteca de PDFs",
+    "author": "Equipe de Documentação",
+    "category": "Manuais",
+    "description": "Aprenda a consultar o catálogo, ler documentos com o motor embed, adicionar links do Google Drive e compartilhar PDFs para todos.",
+    "sizeBytes": 42500,
+    "totalPages": 3,
+    "uploadedAt": "2026-09-16T23:47:38.717Z",
+    "isCustomUpload": false,
+    "sourceType": "sample",
+    "tags": [
+      "Manual",
+      "Tutorial",
+      "Google Drive",
+      "Compartilhamento"
+    ],
+    "isFavorite": true,
+    "progressPercent": 20
+  },
+  {
+    "id": "doc-relatorio-ia-2026",
+    "title": "Panorama de Inteligência Artificial e Produtividade",
+    "author": "Instituto de Tecnologia & Futuro",
+    "category": "Artigos",
+    "description": "Análise aprofundada sobre a integração de modelos generativos, automação de fluxos corporativos e leitura digital.",
+    "sizeBytes": 68400,
+    "totalPages": 4,
+    "uploadedAt": "2026-09-15T23:47:38.717Z",
+    "isCustomUpload": false,
+    "sourceType": "sample",
+    "tags": [
+      "IA",
+      "Tecnologia",
+      "Inovação",
+      "Pesquisa"
+    ],
+    "isFavorite": false,
+    "progressPercent": 0
+  },
+  {
+    "id": "doc-guia-design-sistemas",
+    "title": "Design Systems e Interfaces Modernas",
+    "author": "Laboratório de Experiência do Usuário",
+    "category": "Design",
+    "description": "Princípios fundamentais de hierarquia visual, tipografia refinada e padrões de usabilidade para produtos digitais.",
+    "sizeBytes": 54100,
+    "totalPages": 3,
+    "uploadedAt": "2026-09-14T23:47:38.717Z",
+    "isCustomUpload": false,
+    "sourceType": "sample",
+    "tags": [
+      "Design",
+      "UI/UX",
+      "Tipografia",
+      "Layout"
+    ],
+    "isFavorite": false,
+    "progressPercent": 0
+  }
+]
