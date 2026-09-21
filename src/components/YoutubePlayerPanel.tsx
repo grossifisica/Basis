@@ -12,7 +12,6 @@ import {
   ListVideo,
   HardDrive,
   Video,
-  ExternalLink,
 } from 'lucide-react';
 import { detectVideoInfo, VideoDetails } from '../utils/formatters';
 
@@ -149,19 +148,6 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
               <Repeat className="w-3 h-3" />
               <span className="hidden sm:inline">Próximo</span>
             </button>
-          )}
-
-          {/* Open original link in new tab */}
-          {currentRawUrl && (
-            <a
-              href={currentRawUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1.5 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 transition-colors cursor-pointer"
-              title="Abrir vídeo em nova guia (Google Drive / YouTube)"
-            >
-              <ExternalLink className="w-3.5 h-3.5 text-stone-300 hover:text-amber-400" />
-            </a>
           )}
 
           {/* If floating, allow expanding/reducing the floating size */}
