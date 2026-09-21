@@ -90,7 +90,7 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
               isFloatingExpanded
                 ? 'w-[540px] sm:w-[640px] md:w-[720px]'
                 : 'w-[380px] sm:w-[480px] md:w-[520px]'
-            } max-w-[calc(100vw-24px)] rounded-xl border border-stone-700/90 shadow-2xl shadow-stone-950/90 overflow-hidden ${
+            } max-w-[calc(100vw-24px)] max-h-[calc(100dvh-5rem)] rounded-xl border border-stone-700/90 shadow-2xl shadow-stone-950/90 overflow-hidden ${
               hasFooter
                 ? 'bottom-16 sm:bottom-16 right-3 sm:right-6'
                 : 'bottom-4 sm:bottom-6 right-3 sm:right-6'
@@ -245,7 +245,7 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
       {/* Panel Content */}
       <div
         className={`flex flex-col bg-stone-900 ${
-          layoutMode === 'floating' ? 'w-full' : 'flex-1 overflow-y-auto'
+          layoutMode === 'floating' ? 'w-full' : 'flex-1 md:overflow-y-auto'
         }`}
       >
         {activeEmbedUrl ? (
@@ -257,26 +257,40 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
           >
             {/* Aspect Ratio Responsive Video Frame */}
             <div
-              className={`relative w-full bg-black shrink-0 overflow-hidden shadow-inner ${
+              className={`relative w-full bg-black shrink-0 overflow-hidden shadow-inner flex items-center justify-center ${
                 layoutMode === 'video-only'
                   ? 'flex-1 h-full min-h-0'
                   : 'w-full aspect-video'
               }`}
             >
-              <iframe
-                id="active-video-iframe-player"
-                key={activeEmbedUrl}
-                src={activeEmbedUrl}
-                title={`Vídeo: ${documentTitle} - ${currentVideoTitle}`}
-                className="absolute inset-0 w-full h-full border-0 block"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                allowFullScreen
-              />
+              {layoutMode === 'video-only' ? (
+                <div className="w-full max-h-full aspect-video relative flex items-center justify-center">
+                  <iframe
+                    id="active-video-iframe-player"
+                    key={activeEmbedUrl}
+                    src={activeEmbedUrl}
+                    title={`Vídeo: ${documentTitle} - ${currentVideoTitle}`}
+                    className="w-full h-full border-0 block"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowFullScreen
+                  />
+                </div>
+              ) : (
+                <iframe
+                  id="active-video-iframe-player"
+                  key={activeEmbedUrl}
+                  src={activeEmbedUrl}
+                  title={`Vídeo: ${documentTitle} - ${currentVideoTitle}`}
+                  className="absolute inset-0 w-full h-full border-0 block"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                  allowFullScreen
+                />
+              )}
             </div>
 
-            {/* Quick Controls & Student Helpers (Visible when in Split Mode) */}
+            {/* Quick Controls & Student Helpers (Visible when in Split Mode on Desktop) */}
             {layoutMode === 'split' && (
-              <div className="p-3 space-y-2.5 flex-1 overflow-y-auto">
+              <div className="hidden md:block p-3 space-y-2.5 flex-1 overflow-y-auto">
                 {/* Active Video Info & Quick Switch */}
                 {hasMultipleVideos && (
                   <div className="bg-stone-950/90 p-3 rounded-xl border border-stone-800 space-y-2.5">

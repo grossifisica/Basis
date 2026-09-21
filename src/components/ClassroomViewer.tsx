@@ -93,7 +93,7 @@ export const ClassroomViewer: React.FC<ClassroomViewerProps> = ({
   const embedSrc = getEmbedSource();
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden bg-stone-900 text-stone-100 select-none">
+    <div className="flex flex-col h-[100dvh] max-h-[100dvh] w-full overflow-hidden bg-stone-900 text-stone-100 select-none pb-[env(safe-area-inset-bottom)]">
       {/* Top Header */}
       <header className="h-16 px-4 sm:px-6 bg-stone-900 border-b border-stone-800 flex items-center justify-between gap-3 shrink-0 z-30">
         {/* Left: Back button & Title */}
@@ -329,12 +329,12 @@ export const ClassroomViewer: React.FC<ClassroomViewerProps> = ({
       <main className="flex-1 relative flex flex-col md:flex-row overflow-hidden">
         {/* PDF / Exercise List Stage - Preserved in DOM to prevent reload/flicker */}
         <section
-          className={`h-full flex flex-col overflow-hidden transition-all relative ${
+          className={`flex-1 min-h-0 flex flex-col overflow-hidden transition-all relative ${
             layoutMode === 'video-only'
               ? 'hidden'
               : layoutMode === 'split'
-              ? 'w-full md:w-[56%] lg:w-[55%] xl:w-[56%]'
-              : 'w-full'
+              ? 'w-full md:w-[56%] lg:w-[55%] xl:w-[56%] md:h-full'
+              : 'w-full h-full'
           }`}
         >
           {embedSrc ? (
@@ -394,7 +394,7 @@ export const ClassroomViewer: React.FC<ClassroomViewerProps> = ({
 
         {/* Video Player Panel - Split View */}
         {layoutMode === 'split' && (
-          <aside className="w-full md:w-[44%] lg:w-[45%] xl:w-[44%] h-[50%] md:h-full border-t md:border-t-0 md:border-l border-stone-800 bg-stone-900 flex flex-col overflow-hidden z-20 shrink-0">
+          <aside className="w-full md:w-[44%] lg:w-[45%] xl:w-[44%] h-auto md:h-full border-b md:border-b-0 md:border-l border-stone-800 bg-stone-900 flex flex-col overflow-hidden z-20 shrink-0 order-first md:order-last">
             <YoutubePlayerPanel
               youtubeUrl={activeYtUrl}
               youtubeVideoId={activeYtId}
