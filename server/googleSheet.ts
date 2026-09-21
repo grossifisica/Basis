@@ -72,8 +72,8 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-export const GITHUB_REPO_URL = 'https://github.com/grossifisica/Mb/blob/main/cont.txt';
-export const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Mb/main/cont.txt';
+export const GITHUB_REPO_URL = 'https://github.com/grossifisica/Basis/blob/main/cont.txt';
+export const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Basis/main/cont.txt';
 
 // Initial sample data
 const DEFAULT_INITIAL_ITEM: LessonItem = {
@@ -116,7 +116,7 @@ const DEFAULT_INITIAL_AULA: Aula = {
 };
 
 export function extractSpreadsheetId(_url: string): string | null {
-  return 'github-grossifisica-mb';
+  return 'github-grossifisica-basis';
 }
 
 export function getSheetConfig(): GoogleSheetConfig {
@@ -126,7 +126,7 @@ export function getSheetConfig(): GoogleSheetConfig {
       return {
         ...data,
         sheetUrl: GITHUB_REPO_URL,
-        spreadsheetId: 'github-grossifisica-mb',
+        spreadsheetId: 'github-grossifisica-basis',
       };
     }
   } catch (err) {
@@ -135,7 +135,7 @@ export function getSheetConfig(): GoogleSheetConfig {
 
   return {
     sheetUrl: GITHUB_REPO_URL,
-    spreadsheetId: 'github-grossifisica-mb',
+    spreadsheetId: 'github-grossifisica-basis',
     status: 'connected',
     statusMessage: 'Conectado ao repositório GitHub',
     totalAulas: 1,
@@ -331,7 +331,7 @@ export async function syncGoogleSpreadsheet(_providedUrl?: string): Promise<Shee
 
     const updatedConfig: GoogleSheetConfig = {
       sheetUrl: GITHUB_REPO_URL,
-      spreadsheetId: 'github-grossifisica-mb',
+      spreadsheetId: 'github-grossifisica-basis',
       lastSyncedAt: new Date().toISOString(),
       status: 'connected',
       statusMessage: `Sincronizado com sucesso! ${aulas.length} aula(s) carregada(s) do GitHub.`,
@@ -356,7 +356,7 @@ export async function syncGoogleSpreadsheet(_providedUrl?: string): Promise<Shee
     const errConfig: GoogleSheetConfig = {
       ...config,
       sheetUrl: GITHUB_REPO_URL,
-      spreadsheetId: 'github-grossifisica-mb',
+      spreadsheetId: 'github-grossifisica-basis',
       status: 'error',
       statusMessage: `Erro ao sincronizar do GitHub: ${err.message || 'Verifique o link.'}`,
     };

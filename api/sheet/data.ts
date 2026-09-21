@@ -1,5 +1,5 @@
-const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Mb/main/cont.txt';
-const GITHUB_REPO_URL = 'https://github.com/grossifisica/Mb/blob/main/cont.txt';
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Basis/main/cont.txt';
+const GITHUB_REPO_URL = 'https://github.com/grossifisica/Basis/blob/main/cont.txt';
 
 function extractYoutubeVideoId(url?: string): string | null {
   if (!url) return null;
@@ -159,7 +159,7 @@ export default async function handler(req: any, res: any) {
     return res.status(200).json({
       config: {
         sheetUrl: GITHUB_REPO_URL,
-        spreadsheetId: 'github-grossifisica-mb',
+        spreadsheetId: 'github-grossifisica-basis',
         lastSyncedAt: now,
         status: 'connected',
         statusMessage: `Sincronizado com o GitHub (${aulas.length} aula(s) carregada(s))`,

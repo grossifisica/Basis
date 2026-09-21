@@ -1,8 +1,8 @@
 {
   "config": {
-    "sheetUrl": "https://github.com/grossifisica/Mb/blob/main/cont.txt",
-    "spreadsheetId": "github-grossifisica-mb",
-    "lastSyncedAt": "2026-09-21T17:01:31.871Z",
+    "sheetUrl": "https://github.com/grossifisica/Basis/blob/main/cont.txt",
+    "spreadsheetId": "github-grossifisica-basis",
+    "lastSyncedAt": "2026-09-21T17:29:58.659Z",
     "status": "connected",
     "statusMessage": "Sincronizado com sucesso! 3 aula(s) carregada(s) do GitHub.",
     "totalAulas": 3,
@@ -255,5 +255,5 @@
   "subjects": [
     "Matemática Básica"
   ],
-  "lastSyncedAt": "2026-09-21T17:01:31.871Z"
+  "lastSyncedAt": "2026-09-21T17:29:58.659Z"
 }

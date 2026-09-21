@@ -19,9 +19,9 @@ export interface AuthSession {
 }
 
 export const GITHUB_USUARIO_RAW_URL =
-  'https://raw.githubusercontent.com/grossifisica/Mb/main/usuario.txt';
+  'https://raw.githubusercontent.com/grossifisica/Basis/main/usuario.txt';
 export const GITHUB_USUARIO_COMMIT_URL =
-  'https://raw.githubusercontent.com/grossifisica/Mb/f6eb5c0845cc545f20466eb15359e3716b1fd6c8/usuario.txt';
+  'https://raw.githubusercontent.com/grossifisica/Basis/main/usuario.txt';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const CACHE_FILE = path.join(DATA_DIR, 'users-cache.json');

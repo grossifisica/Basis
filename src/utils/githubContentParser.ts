@@ -1,9 +1,10 @@
 import { Aula, LessonItem, LessonVideo, SheetDataState } from '../types';
+import { DEFAULT_SHEET_DATA } from '../data/defaultSheetData';
 import { detectVideoInfo, extractDriveId, extractYoutubeVideoId } from './formatters';
 
-export const GITHUB_REPO_URL = 'https://github.com/grossifisica/Mb/blob/main/cont.txt';
-export const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Mb/main/cont.txt';
-export const GITHUB_API_URL = 'https://api.github.com/repos/grossifisica/Mb/contents/cont.txt';
+export const GITHUB_REPO_URL = 'https://github.com/grossifisica/Basis/blob/main/cont.txt';
+export const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/grossifisica/Basis/main/cont.txt';
+export const GITHUB_API_URL = 'https://api.github.com/repos/grossifisica/Basis/contents/cont.txt';
 export const LOCAL_FALLBACK_URL = '/cont.txt';
 
 /**
@@ -115,7 +116,7 @@ export function parseContText(text: string): SheetDataState {
   return {
     config: {
       sheetUrl: GITHUB_REPO_URL,
-      spreadsheetId: 'github-grossifisica-mb',
+      spreadsheetId: 'github-grossifisica-basis',
       lastSyncedAt: now,
       status: 'connected',
       statusMessage: `Sincronizado com o GitHub (${aulas.length} aula(s) carregada(s))`,
@@ -185,5 +186,6 @@ export async function fetchGitHubContent(): Promise<SheetDataState> {
     console.warn('Local fallback cont.txt fetch failed:', localErr);
   }
 
-  throw new Error('Não foi possível carregar o arquivo cont.txt do GitHub.');
+  // 4. Ultimate fallback to default sheet data
+  return DEFAULT_SHEET_DATA;
 }

@@ -2,9 +2,9 @@ import { SheetDataState } from "../types";
 
 export const DEFAULT_SHEET_DATA: SheetDataState = {
   "config": {
-    "sheetUrl": "https://github.com/grossifisica/Mb/blob/main/cont.txt",
-    "spreadsheetId": "github-grossifisica-mb",
-    "lastSyncedAt": "2026-09-21T17:16:47.541Z",
+    "sheetUrl": "https://github.com/grossifisica/Basis/blob/main/cont.txt",
+    "spreadsheetId": "github-grossifisica-basis",
+    "lastSyncedAt": "2026-09-21T17:29:55.102Z",
     "status": "connected",
     "statusMessage": "Sincronizado com o GitHub (3 aula(s) carregada(s))",
     "totalAulas": 3,
@@ -59,36 +59,42 @@ export const DEFAULT_SHEET_DATA: SheetDataState = {
     },
     {
       "id": "aula-2",
-      "name": "LIMAI",
+      "name": "Potências de base 10",
       "gid": "2",
       "items": [
         {
           "id": "aula-item-2",
-          "aulaName": "LIMAI",
+          "aulaName": "Potências de base 10",
           "aulaIndex": 1,
           "rowNumber": 2,
-          "title": "LIMAI",
+          "title": "Potências de base 10",
           "subject": "Matemática Básica",
           "pdfLinks": [
-            "BBB"
+            "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing"
           ],
           "youtubeLinks": [
-            "CCCC"
+            "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
           ],
           "videoLinks": [
-            "CCCC"
+            "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
           ],
           "videos": [
             {
-              "url": "CCCC",
-              "id": "video-2-1",
-              "title": "LIMAI - Vídeo 1",
-              "type": "other"
+              "url": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+              "id": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+              "title": "Potências de base 10 - Vídeo 1",
+              "type": "drive",
+              "driveFileId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+              "embedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+              "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r&sz=w800"
             }
           ],
-          "primaryPdfUrl": "BBB",
-          "primaryYoutubeUrl": "CCCC",
-          "primaryVideoType": "other"
+          "primaryPdfUrl": "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing",
+          "primaryYoutubeUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+          "primaryDriveVideoId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "primaryVideoType": "drive",
+          "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+          "driveFileId": "1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc"
         }
       ],
       "totalPdfs": 1,
@@ -99,36 +105,42 @@ export const DEFAULT_SHEET_DATA: SheetDataState = {
     },
     {
       "id": "aula-3",
-      "name": "TESTES",
+      "name": "Prefixos",
       "gid": "3",
       "items": [
         {
           "id": "aula-item-3",
-          "aulaName": "TESTES",
+          "aulaName": "Prefixos",
           "aulaIndex": 2,
           "rowNumber": 3,
-          "title": "TESTES",
+          "title": "Prefixos",
           "subject": "Matemática Básica",
           "pdfLinks": [
-            "AAAA"
+            "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing"
           ],
           "youtubeLinks": [
-            "CCSD"
+            "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
           ],
           "videoLinks": [
-            "CCSD"
+            "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
           ],
           "videos": [
             {
-              "url": "CCSD",
-              "id": "video-3-1",
-              "title": "TESTES - Vídeo 1",
-              "type": "other"
+              "url": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+              "id": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+              "title": "Prefixos - Vídeo 1",
+              "type": "drive",
+              "driveFileId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+              "embedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+              "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z&sz=w800"
             }
           ],
-          "primaryPdfUrl": "AAAA",
-          "primaryYoutubeUrl": "CCSD",
-          "primaryVideoType": "other"
+          "primaryPdfUrl": "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing",
+          "primaryYoutubeUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+          "primaryDriveVideoId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "primaryVideoType": "drive",
+          "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+          "driveFileId": "1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk"
         }
       ],
       "totalPdfs": 1,
@@ -175,63 +187,75 @@ export const DEFAULT_SHEET_DATA: SheetDataState = {
     },
     {
       "id": "aula-item-2",
-      "aulaName": "LIMAI",
+      "aulaName": "Potências de base 10",
       "aulaIndex": 1,
       "rowNumber": 2,
-      "title": "LIMAI",
+      "title": "Potências de base 10",
       "subject": "Matemática Básica",
       "pdfLinks": [
-        "BBB"
+        "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing"
       ],
       "youtubeLinks": [
-        "CCCC"
+        "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
       ],
       "videoLinks": [
-        "CCCC"
+        "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing"
       ],
       "videos": [
         {
-          "url": "CCCC",
-          "id": "video-2-1",
-          "title": "LIMAI - Vídeo 1",
-          "type": "other"
+          "url": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+          "id": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "title": "Potências de base 10 - Vídeo 1",
+          "type": "drive",
+          "driveFileId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+          "embedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+          "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r&sz=w800"
         }
       ],
-      "primaryPdfUrl": "BBB",
-      "primaryYoutubeUrl": "CCCC",
-      "primaryVideoType": "other"
+      "primaryPdfUrl": "https://docs.google.com/presentation/d/1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc/edit?usp=sharing",
+      "primaryYoutubeUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/view?usp=sharing",
+      "primaryDriveVideoId": "1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r",
+      "primaryVideoType": "drive",
+      "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1RKhLktHTrmOL-lYC59w9JFKvR8vxgi8r/preview",
+      "driveFileId": "1awJl8phnQB85jHqml1QFjwbS5r8aDvKHJ7uDtPjWyVc"
     },
     {
       "id": "aula-item-3",
-      "aulaName": "TESTES",
+      "aulaName": "Prefixos",
       "aulaIndex": 2,
       "rowNumber": 3,
-      "title": "TESTES",
+      "title": "Prefixos",
       "subject": "Matemática Básica",
       "pdfLinks": [
-        "AAAA"
+        "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing"
       ],
       "youtubeLinks": [
-        "CCSD"
+        "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
       ],
       "videoLinks": [
-        "CCSD"
+        "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing"
       ],
       "videos": [
         {
-          "url": "CCSD",
-          "id": "video-3-1",
-          "title": "TESTES - Vídeo 1",
-          "type": "other"
+          "url": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+          "id": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "title": "Prefixos - Vídeo 1",
+          "type": "drive",
+          "driveFileId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+          "embedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+          "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z&sz=w800"
         }
       ],
-      "primaryPdfUrl": "AAAA",
-      "primaryYoutubeUrl": "CCSD",
-      "primaryVideoType": "other"
+      "primaryPdfUrl": "https://docs.google.com/presentation/d/1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk/edit?usp=sharing",
+      "primaryYoutubeUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/view?usp=sharing",
+      "primaryDriveVideoId": "1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z",
+      "primaryVideoType": "drive",
+      "primaryVideoEmbedUrl": "https://drive.google.com/file/d/1xxCyE8ycPVotCLHaKW8IvYQTPXCYjq7z/preview",
+      "driveFileId": "1X6QD-oJ89_i7boKSanLEzR425BXFZTYTR5osqcoWZMk"
     }
   ],
   "subjects": [
     "Matemática Básica"
   ],
-  "lastSyncedAt": "2026-09-21T17:16:47.541Z"
+  "lastSyncedAt": "2026-09-21T17:29:55.102Z"
 };
