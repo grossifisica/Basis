@@ -12,6 +12,7 @@ import {
   ListVideo,
   HardDrive,
   Video,
+  ExternalLink,
 } from 'lucide-react';
 import { detectVideoInfo, VideoDetails } from '../utils/formatters';
 
@@ -37,6 +38,7 @@ interface YoutubePlayerPanelProps {
   documentTitle: string;
   layoutMode: 'split' | 'floating' | 'video-only';
   onToggleLayoutMode: () => void;
+  onToggleFullscreenVideo?: () => void;
   onClose: () => void;
   onAddTimestampNote?: (timestampNote: string) => void;
   hasFooter?: boolean;
@@ -53,6 +55,7 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
   documentTitle,
   layoutMode,
   onToggleLayoutMode,
+  onToggleFullscreenVideo,
   onClose,
   onAddTimestampNote,
   hasFooter = false,
@@ -95,7 +98,7 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
                 ? 'bottom-16 sm:bottom-16 right-3 sm:right-6'
                 : 'bottom-4 sm:bottom-6 right-3 sm:right-6'
             }`
-          : 'w-full h-full border-0 overflow-hidden'
+          : 'w-full h-auto md:h-full border-0 overflow-hidden'
       }`}
     >
       {/* Panel Header */}
@@ -119,7 +122,7 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
           <div className="min-w-0">
             <h4 className="text-xs font-bold text-white truncate flex items-center gap-1.5">
               <span className="truncate max-w-[130px] sm:max-w-[220px]">
-                {layoutMode === 'floating'
+                {layoutMode === 'floating' || layoutMode === 'video-only'
                   ? currentVideoTitle
                   : 'Vídeo'}
               </span>
@@ -150,6 +153,38 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
             </button>
           )}
 
+          {/* Direct Link to Video (Google Drive / YouTube) */}
+          {currentRawUrl && (
+            <a
+              href={currentRawUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-md text-stone-400 hover:text-stone-200 hover:bg-stone-800 transition-colors cursor-pointer"
+              title={isDriveVideo ? 'Abrir no Google Drive' : 'Abrir no YouTube'}
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          )}
+
+          {/* Toggle Video Only / Fullscreen View */}
+          {onToggleFullscreenVideo && (
+            <button
+              onClick={onToggleFullscreenVideo}
+              className="p-1.5 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 transition-colors cursor-pointer"
+              title={
+                layoutMode === 'video-only'
+                  ? 'Voltar para tela dividida'
+                  : 'Expandir vídeo em tela cheia'
+              }
+            >
+              {layoutMode === 'video-only' ? (
+                <Minimize2 className="w-3.5 h-3.5 text-amber-400" />
+              ) : (
+                <Maximize2 className="w-3.5 h-3.5" />
+              )}
+            </button>
+          )}
+
           {/* If floating, allow expanding/reducing the floating size */}
           {layoutMode === 'floating' && (
             <button
@@ -166,21 +201,23 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
           )}
 
           {/* Toggle Layout (Floating PiP vs Split) */}
-          <button
-            onClick={onToggleLayoutMode}
-            className="p-1.5 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 transition-colors cursor-pointer"
-            title={
-              layoutMode === 'split'
-                ? 'Mudar para Mini Player Flutuante (PiP)'
-                : 'Mudar para Divisão Lado a Lado'
-            }
-          >
-            {layoutMode === 'split' ? (
-              <LayoutTemplate className="w-3.5 h-3.5" />
-            ) : (
-              <LayoutTemplate className="w-3.5 h-3.5 text-amber-400" />
-            )}
-          </button>
+          {layoutMode !== 'video-only' && (
+            <button
+              onClick={onToggleLayoutMode}
+              className="p-1.5 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 transition-colors cursor-pointer"
+              title={
+                layoutMode === 'split'
+                  ? 'Mudar para Mini Player Flutuante (PiP)'
+                  : 'Mudar para Divisão Lado a Lado'
+              }
+            >
+              {layoutMode === 'split' ? (
+                <LayoutTemplate className="w-3.5 h-3.5" />
+              ) : (
+                <LayoutTemplate className="w-3.5 h-3.5 text-amber-400" />
+              )}
+            </button>
+          )}
 
           {/* Close / Minimize Panel */}
           <button
@@ -255,27 +292,40 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
               layoutMode === 'floating' ? 'w-full' : 'flex-1 min-h-0'
             }`}
           >
-            {/* Aspect Ratio Responsive Video Frame */}
-            <div
-              className={`relative w-full bg-black shrink-0 overflow-hidden shadow-inner flex items-center justify-center ${
-                layoutMode === 'video-only'
-                  ? 'flex-1 h-full min-h-0'
-                  : 'w-full aspect-video'
-              }`}
-            >
-              {layoutMode === 'video-only' ? (
-                <div className="w-full max-h-full aspect-video relative flex items-center justify-center">
+            {/* Responsive Video Frame with Extra Clearance for Google Drive Controls */}
+            {layoutMode === 'video-only' ? (
+              <div className="flex-1 h-full min-h-0 w-full flex items-center justify-center p-2 sm:p-4 overflow-hidden bg-stone-950">
+                <div
+                  className="relative w-full max-h-full flex items-center justify-center shadow-2xl rounded-xl overflow-hidden bg-black"
+                  style={{
+                    maxWidth: isDriveVideo
+                      ? 'calc((100dvh - 120px) * 1.45)'
+                      : 'calc((100dvh - 120px) * (16 / 9))',
+                    paddingBottom: isDriveVideo ? 'calc(56.25% + 56px)' : '56.25%',
+                    height: 0,
+                  }}
+                >
                   <iframe
                     id="active-video-iframe-player"
                     key={activeEmbedUrl}
                     src={activeEmbedUrl}
                     title={`Vídeo: ${documentTitle} - ${currentVideoTitle}`}
-                    className="w-full h-full border-0 block"
+                    className="absolute inset-0 w-full h-full border-0 block"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                     allowFullScreen
                   />
                 </div>
-              ) : (
+              </div>
+            ) : (
+              /* Aspect Ratio Responsive Video Frame for Split & Floating */
+              <div
+                className="relative w-full bg-black shrink-0 overflow-hidden shadow-inner flex items-center justify-center"
+                style={{
+                  paddingBottom: isDriveVideo ? 'calc(56.25% + 56px)' : '56.25%',
+                  height: 0,
+                  minHeight: isDriveVideo ? '260px' : undefined,
+                }}
+              >
                 <iframe
                   id="active-video-iframe-player"
                   key={activeEmbedUrl}
@@ -285,8 +335,8 @@ export const YoutubePlayerPanel: React.FC<YoutubePlayerPanelProps> = ({
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowFullScreen
                 />
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Quick Controls & Student Helpers (Visible when in Split Mode on Desktop) */}
             {layoutMode === 'split' && (

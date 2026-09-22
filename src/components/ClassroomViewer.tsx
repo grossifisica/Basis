@@ -406,6 +406,7 @@ export const ClassroomViewer: React.FC<ClassroomViewerProps> = ({
               documentTitle={`${item.title} (${item.aulaName})`}
               layoutMode="split"
               onToggleLayoutMode={() => setLayoutMode('floating')}
+              onToggleFullscreenVideo={() => setLayoutMode('video-only')}
               onClose={() => setLayoutMode('pdf-only')}
             />
           </aside>
@@ -425,6 +426,7 @@ export const ClassroomViewer: React.FC<ClassroomViewerProps> = ({
               documentTitle={`${item.title} (${item.aulaName})`}
               layoutMode="video-only"
               onToggleLayoutMode={() => setLayoutMode('split')}
+              onToggleFullscreenVideo={() => setLayoutMode('split')}
               onClose={() => setLayoutMode('split')}
             />
           </section>
